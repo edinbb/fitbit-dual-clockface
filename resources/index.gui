@@ -1,0 +1,97 @@
+<svg>
+  <defs>
+    <symbol id='clock'>
+      <g>
+        <svg id='main' display='none' opacity='0'>
+          <image class='no1' />
+          <image class='no2' />
+          <image class='no3' />
+          <image class='no4' />
+          <text class='day' />
+          <text class='date' />
+          <text class='ampm' />
+          <animate attributeName='display' to='inline' dur='0' begin='select' />
+          <animate attributeName='opacity' to='1' dur='0' begin='select+0.033' easing='ease-in-out' />
+          <animate attributeName='display' to='inline' dur='0' begin='enable' />
+          <animate attributeName='opacity' to='1' dur='0' begin='enable+0.033' easing='ease-in-out' />
+          <animate attributeName='opacity' to='0' dur='0.4' begin='disable' easing='ease-in-out'/>
+          <animate attributeName='display' to='none' dur='0' begin='disable+0.433' />
+        </svg>
+        <animateTransform attributeName='transform' 
+                          attributeType='translate' 
+                          begin='enable+0.033'
+                          end='disable' 
+                          to='0' 
+                          from='-70%' 
+                          easing='ease' 
+                          dur='0.4'
+                          final='keep'/>
+      </g>
+    </symbol>
+    
+    <symbol id='stat'>      
+      <svg id='main' display='none' opacity='0'>
+        <text id='stat-value' class='stat-value' />
+        <text id='stat-title' class='stat-title' />
+        <animate attributeName='display' to='inline' dur='0' begin='select' />
+        <animate attributeName='opacity' to='1' dur='0.4' begin='select+0.033' easing='ease-in-out' />
+        <animate attributeName='display' to='inline' dur='0' begin='enable' />
+        <animate attributeName='display' to='none'   dur='0' begin='unload;disable' />
+        <animate attributeName='opacity' to='1' dur='0.4' begin='enable+0.033' easing='ease-in-out' />
+        <animate attributeName='opacity' to='0' dur='0' begin='unload;disable' />
+      </svg>
+    </symbol>
+  </defs>
+  <use href='#clock' class='clock' />
+  <use href='#clock' class='clock' />
+  <use href='#clock' class='clock' />
+     
+  <use id='steps-first' href='#stat' class='first-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='STEPS' />
+  </use>
+  <use id='cals-first' href='#stat' class='first-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='CALS' />
+  </use>
+  <use id='dist-first' href='#stat' class='first-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='DIST' />
+  </use>
+  <use id='floors-first' href='#stat' class='first-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='FLRS' />
+  </use>
+  <use id='am-first' href='#stat' class='first-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='ACT' />
+  </use>
+  
+  <use id='steps-second' href='#stat' class='second-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='STEPS' />
+  </use>
+  <use id='cals-second' href='#stat' class='second-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='CALS' />
+  </use>
+  <use id='dist-second' href='#stat' class='second-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='DIST' />
+  </use>
+  <use id='floors-second' href='#stat' class='second-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='FLRS' />
+  </use>
+  <use id='am-second' href='#stat' class='second-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='ACT' />
+  </use>
+  
+  <use id='hr-stat' href='#stat' class='third-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='BPM' />
+    <set href='#main/stat-value' attributeName='text-buffer' to='--' />
+  </use>
+  <use id='rhr-stat' href='#stat' class='third-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='RHR' />
+    <set href='#main/stat-value' attributeName='text-buffer' to='--' />
+  </use>
+  <use id='batt-stat' href='#stat' class='third-stat'>
+    <set href='#main/stat-title' attributeName='text-buffer' to='BATT' />
+  </use>
+  
+  <rect id='clock-touch-area' pointer-events='visible' />
+  <rect id='first-touch-area' pointer-events='visible' />
+  <rect id='second-touch-area' pointer-events='visible' />
+  <rect id='third-touch-area' pointer-events='visible' />
+</svg>
