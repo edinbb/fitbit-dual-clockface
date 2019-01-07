@@ -9,3 +9,13 @@ Features:
 - Tap on stats to toggle between activity stats.
 
 The Dual clock is not endorsed by Fitbit.
+
+## Instructions 
+
+Clock face is using Google’s Geocoding API and Timezone API. Add file appconfig.json with your token to /resources folder. 
+
+```
+{
+  token: “your_token”
+}
+```
