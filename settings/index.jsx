@@ -62,18 +62,19 @@ function mySettings(props) {
         {renderColorPicker(props, 'thirdClockToggle', 'thirdClockColor')}
       </Section>
       <Section
-        title={<Text bold align="left">Stats Lock</Text>}>
+        title={<Text bold align="left">Stats Lock</Text>}
+        description={<Text align="left">Version: 2.8.0</Text>}>
         <Toggle
           settingsKey="lockFirst"
-          label="First"
+          label="Top"
         />
         <Toggle
           settingsKey="lockSecond"
-          label="Second"
+          label="Middle"
         />
         <Toggle
           settingsKey="lockThird"
-          label="Third"
+          label="Bottom"
         />
       </Section>
     </Page>
@@ -93,11 +94,60 @@ function renderColorPicker(props, toggleName, settingName) {
       <ColorSelect
         settingsKey={settingName}
         colors={[
-          { color: '#32CD32' },
-          { color: '#FFA500' },
-          { color: '#4682B4' },
-          { color: '#D828B8' },
-          { color: '#F83C40' }
+          { color: "#FFFFFF" },
+          { color: "#CCCCCC" },
+          { color: "#999999" },
+          { color: "#666666" },
+          { color: "#333333" },
+          { color: "#000000" },
+
+          { color: "#FFCCCC" },
+          { color: "#FF7F7F" },
+          { color: "#FF4C4C" },
+          { color: "#FF0000" },
+          { color: "#CC0000" },
+          { color: "#990000" },
+          { color: "#660000" },
+
+          { color: "#FF7700" },
+          { color: "#FFAB00" },
+          { color: "#FFCC00" },
+          { color: "#FFFF00" },
+          { color: "#E5E533" },
+          { color: "#CCCC19" },
+          { color: "#999919" },
+
+          { color: "#B2FFB2" },
+          { color: "#66FF66" },
+          { color: "#33FF33" },
+          { color: "#00FF00" },
+          { color: "#00B200" },
+          { color: "#339933" },
+          { color: "#196619" },
+
+          { color: "#00FF9C" },
+          { color: "#00FFB9" },
+          { color: "#00FFC8" },
+          { color: "#00FFFF" },
+          { color: "#00EEFF" },
+          { color: "#00CDFF" },
+          { color: "#00B6FF" },
+
+          { color: "#B2B2FF" },
+          { color: "#9999FF" },
+          { color: "#4C4CFF" },
+          { color: "#0000FF" },
+          { color: "#0000B2" },
+          { color: "#0000AA" },
+          { color: "#004C99" },
+
+          { color: "#9600FF" },
+          { color: "#BE00FF" },
+          { color: "#D300FF" },
+          { color: "#FF00FF" },
+          { color: "#FF00CB" },
+          { color: "#FF009E" },
+          { color: "#FF006A" }
         ]}
       />);
   }

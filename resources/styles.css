@@ -8,13 +8,13 @@
 .date { x: 180; y: 78; font-family: Fabrikat-Bold; font-size: 36; text-anchor: middle; text-length: 16; fill: #FFA500; }
 .ampm { x: 180; y: 100%-14; font-family: Fabrikat-Bold; font-size: 36; text-anchor: middle; text-length: 16; fill: #FFA500; }
 
-.first-stat { x: 232; y: 0; width: 100; height: 78; }
-.second-stat { x: 232; y: 80; width: 100; height: 78; }
-.third-stat { x: 232; y: 158; width: 100; height: 78; }
-.stat-value { x: 0; y: 40; font-family: Fabrikat-Bold; font-size: 36; text-anchor: start; text-length: 64; fill: fb-white; }
-.stat-title { x: 0; y: 78; font-family: Fabrikat-Bold; font-size: 36; text-anchor: start; text-length: 64; fill: fb-dark-gray; }
+.first-stat { x: 232; y: 14; width: 100; height: 64; }
+.second-stat { x: 232; y: 50%-32; width: 100; height: 64; }
+.third-stat { x: 232; y: 100%-78; width: 100; height: 64; }
+.stat-value { x: 0; y: 26; font-family: Fabrikat-Bold; font-size: 36; text-anchor: start; text-length: 64; fill: fb-light-gray; }
+.stat-title { x: 0; y: 100%; font-family: Fabrikat-Bold; font-size: 36; text-anchor: start; text-length: 64; fill: fb-dark-gray; }
 
 #clock-touch-area { x: 14; y: 12; width: 186; height: 238; fill: white; fill-opacity: 0; }
-#first-touch-area { x: 232; y: 12; width: 116; height: 70; fill: white; fill-opacity: 0; }
-#second-touch-area { x: 232; y: 92; width: 116; height: 70; fill: white; fill-opacity: 0; }
-#third-touch-area { x: 232; y: 172; width: 116; height: 70; fill: white; fill-opacity: 0; }
+#first-touch-area { x: 232; y: 14; width: 116; height: 64; fill: white; fill-opacity: 0; }
+#second-touch-area { x: 232; y: 50%-32; width: 116; height: 64; fill: white; fill-opacity: 0; }
+#third-touch-area { x: 232; y: 100%-78; width: 116; height: 64; fill: white; fill-opacity: 0; }

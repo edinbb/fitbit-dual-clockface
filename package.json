@@ -1,11 +1,11 @@
 {
   "name": "fitbit-dual-clockface",
-  "version": "2.7.1",
+  "version": "2.8.0",
   "private": true,
   "license": "UNLICENSED",
   "devDependencies": {
-    "@fitbit/sdk": "^1.0.4",
-    "@fitbit/sdk-cli": "^1.0.2"
+    "@fitbit/sdk": "^1.0.5",
+    "@fitbit/sdk-cli": "^1.5.0"
   },
   "fitbit": {
     "appUUID": "2b74ffcf-b805-47f2-844c-508a204e9dc4",
@@ -20,7 +20,8 @@
       "access_internet"
     ],
     "buildTargets": [
-      "higgs"
+      "higgs",
+      "meson"
     ],
     "i18n": {
       "en": {
