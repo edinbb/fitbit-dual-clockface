@@ -1,5 +1,5 @@
 # Dual
-Dual - based on Fitbit's "Stats" clock face design. Fitbit Ionic only.
+Dual - based on Fitbit's "Stats" clock face design.
 
 ![](Screenshot-1.png)
 
